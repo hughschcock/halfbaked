@@ -13,17 +13,30 @@
       }
       body {
         background: center no-repeat url("cupcakes2.png");
-        width: 100%;
+        background-attachment: fixed;
         height: 100%;
-      }
-      .navbar {
-        background-color: transparent;
+        color: #0d0c0b;
       }
       #top-logo {
         margin-top: 30px;
       }
+      .navtxt {
+        color: #f7dce1;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.6),
+        2px 2px 2px rgba(0,0,0,0.6);
+        /*4px 4px 4px rgba(0,0,0,0.7);*/
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+      }
+      .showcase {
+        background-color: #f7dce1;
+        width: 100%;
+        padding: 75px;
+        margin-top: 500px;
+      }
     </style>
-    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="favicon.ico">
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
@@ -37,43 +50,37 @@
         </a>
       </div>
     </div>
-    
+
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: transparent; ">
-        <a class="navbar-brand" href="#"><img src="favicon.ico"></a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <nav id='nb' class="nav navbar-expand-sm navbar-light mt-2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>  <img src="favicon.ico">
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <div class="navbar-light collapse navbar-collapse justify-content-end justify-content-sm-around align-items-around" id='navbarSupportedContent'>
+            <li class="nav-item">
+              <a  class='navtxt' href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <a  class='navtxt' href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="navbar-brand mx-auto p-auto d-none d-sm-flex" href="#"><img src="queque-sm.png"></a>
             </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+            <li class="nav-item">
+              <a class='navtxt' href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class='navtxt' href="#">Gallery</a>
+            </li>
+          </div>
+        </nav>
     </div>
+    <div class="showcase">
+      <img src="https://via.placeholder.com/300x500/4bc0d4/cf6567/?text=Un+pastel">
+    </div>
+    <div class="showcase" style="height: 500px;"></div>
+
+
 
 
     <!-- Optional JavaScript -->
